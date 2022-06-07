@@ -10,9 +10,9 @@ class Extensionoption extends AbstractSource
     public function getAllOptions()
     {
         $this->_options = [];
-        $this->_options[] = ['label' => 'Vegan Friendly', 'value' => 'vegan'];
-        $this->_options[] = ['label' => 'Made in UK', 'value' => 'madeinuk'];
-        $this->_options[] = ['label' => 'Eco friendly', 'value' => 'eco'];
+        $this->_options[] = ['label' => 'Type 1', 'value' => 't1'];
+        $this->_options[] = ['label' => 'Type 2', 'value' => 't2'];
+        $this->_options[] = ['label' => 'Type 3', 'value' => 't3'];
 
         return $this->_options;
     }

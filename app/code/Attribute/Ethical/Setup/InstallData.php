@@ -24,7 +24,7 @@ class InstallData implements InstallDataInterface
             \Magento\Catalog\Model\Product::ENTITY,
             'ethical',
             [
-                'label' => 'Ethical Icons',
+                'label' => 'Custom Attribute',
                 'type'  => 'text',
                 'input' => 'multiselect',
                 'source' => 'Attribute\Ethical\Model\Config\Product\Extensionoption',
