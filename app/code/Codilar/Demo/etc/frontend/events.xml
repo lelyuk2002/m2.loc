@@ -3,4 +3,7 @@
     <event name="catalog_block_product_list_collection">
         <observer name="catalog_product_name_change" instance="Codilar\Demo\Observer\Product"/>
     </event>
+    <event name="customer_login">
+        <observer name="event_on_customer_login" instance="Codilar\Demo\Observer\Session"/>
+    </event>
 </config>
