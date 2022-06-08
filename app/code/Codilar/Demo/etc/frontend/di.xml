@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <type name="Magento\Catalog\Model\Product">
-        <plugin name="plugin_for_product_name" type="Codilar\Demo\Plugins\Product" disabled="true"/>
+    <type name="Magento\Customer\Model\Session">
+        <plugin name="plugin_for_product_name" type="Codilar\Demo\Plugins\Session" sortOrder="1" disabled="true"/>
+    </type>
+    <type name="\Magento\Customer\Model\Session">
+        <plugin name="plugin_after_customer_logout" type="Codilar\Demo\Plugins\Session" sortOrder="2" disabled="false"/>
     </type>
 </config>
